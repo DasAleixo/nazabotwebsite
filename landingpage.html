@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naza Bot</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Badang', sans-serif;
+    }
+
+    section {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        background: rgb(24, 24, 24);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    .circle {
+        width: 100%;
+        height: 100%;
+        background: #00008B;
+        position: absolute;
+        clip-path: circle(50% at bottom right);
+    }
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .letter {
+        position: relative;
+        max-width: 200%;
+        width: 15%;
+        height: 15%;
+    }
+
+    header nav {
+        position: relative;
+    }
+
+    header .label ul {
+        position: relative;
+        display: flex;
+    }
+
+    header .label ul li {
+        list-style: none;
+    }
+
+    header .label ul li a {
+        color: #fff;
+        letter-spacing: 2px;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 19px;
+        margin-left: 100px;
+    }
+
+    .conteiner {
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .conteiner .content {
+        position: relative;
+        max-width: 600;
+    }
+
+    .conteiner .content h1 {
+        color: rgb(255, 255, 255);
+        letter-spacing: 5px;
+        font-size: 80px;
+        margin-bottom: 5px;
+    }
+
+    .conteiner .content p {
+        color: rgb(255, 255, 255);
+        letter-spacing: 3px;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .conteiner .content button {
+        background-color: orange;
+        font-size: 25px;
+        color: aliceblue;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 2px;
+        line-height: 30px;
+        padding: 5px;
+        margin-bottom: 15px;
+        margin-right: 20px;
+        border-radius: 20px;
+    }
+
+    .conteiner .content .credits {
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .conteiner .content .n {
+        position: relative;
+        height: 15%;
+        width: 15%;
+
+    }
+
+    .conteiner .content img {
+        width: 50%;
+        height: 50%;
+        align-self: baseline;
+    }
+
+    .boxing {
+        position: relative;
+        justify-content: left;
+        width: 50%;
+        height: 100%;
+        min-width: 50%;
+        bottom: -15%;
+        right: 0%;
+    }
+
+    .boxing img {
+        max-width: 100%;
+        min-width: 50%;
+        margin-right: -20%;
+    }
+
+    .conteiner .content .adicionar {
+        text-decoration: none;
+        color: #fff;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="circle"> </div>
+        <header>
+            <img class="letter" src="img/nazaletter.png" alt="logo">
+            <nav class="label">
+                <ul>
+                    <li><a href="#" target="blank">INICIO</a></li>
+                    <li><a href="#" target="blank">SOBRE</a></li>
+                    <li><a href="#" target="blank">COMANDOS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="boxing">
+            <img src="/img/NPNG.png" alt="">
+        </div>
+        <div class="conteiner">
+            <div class="content">
+                <h1><b>LANDING PAGE</b></h1>
+                <p>Apenas um simples bot para o Discord</p>
+                <button><a class="adicionar"
+                        href="https://discord.com/oauth2/authorize?client_id=1074049474386731068&scope=bot&permissions=8">Me
+                        adicione</a></button> <button><b>Saiba mais</b></button>
+                <p class="credits"><b>Developed by: </b><a href="https://github.com/DasAleixo">Aleixo</a></p>
+            </div>
+        </div>
+    </section>
+</body>
