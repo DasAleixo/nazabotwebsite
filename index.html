@@ -82,6 +82,7 @@
         display: flex;
         width: 100%;
         align-items: center;
+        right: 100px;
     }
 
     .conteiner .content {
@@ -137,17 +138,19 @@
 
     .boxing {
         position: relative;
-        justify-content: left;
-        width: 50%;
-        height: 100%;
-        min-width: 50%;
-        bottom: -15%;
-        right: 0%;
+        display: flex;
+        width: 100%;
+        right: 100px;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    .boxing img {
-        max-width: 100%;
-        min-width: 50%;
+    .boxing .letran {
+        position: relative;
+        max-width: 300%;
+        max-height: 300%;
+        min-width: 100%;
+        min-height: 100%;
         margin-right: -20%;
     }
 
@@ -171,7 +174,7 @@
             </nav>
         </header>
         <div class="boxing">
-            <img src="/img/NPNG.png" alt="">
+            <img class="letran" src="img/letran.png" alt="logo">
         </div>
         <div class="conteiner">
             <div class="content">
