@@ -14,6 +14,7 @@
         padding: 0;
         box-sizing: border-box;
         font-family: 'Badang', sans-serif;
+        src: url("/font/Badang.ttf") format('truetype');
     }
 
     section {
@@ -158,6 +159,58 @@
         text-decoration: none;
         color: #fff;
     }
+
+    @media (max-width: 400px) {
+        section{
+            width: 100%;
+            max-height: 100vh;
+            overflow: hidden;
+        }
+        .circle{
+            clip-path: circle(30% at bottom right);
+        }
+
+        .conteiner .content {
+            display: grid;
+            padding-top: 900%;
+            padding-left: 100%;
+            justify-content: center;
+            align-items: center;
+            width: 10px;
+            margin-top: -600%;
+            
+    }
+        .conteiner .content h1 {
+            display: contents;
+            font-size: 70px;
+        }
+        .conteiner .content .desc {
+            font-size: 20px;
+            display: contents;
+            margin-right: -100%;
+        }
+        .conteiner .content button {
+            margin-top: 40px;
+            margin-bottom: 10%;
+            padding: 20px;
+        }
+        .boxing {
+            width: 200%;
+            padding-top: 300%;
+            display: grid;
+            margin-bottom: 600%;
+            margin-top: -20%;
+            justify-content: center;
+            align-items: center;
+        }
+        .boxing .letran{
+            width: 1000px;
+        }
+
+        header{
+            display: none;
+        }
+}
 </style>
 
 <body>
@@ -179,7 +232,7 @@
         <div class="conteiner">
             <div class="content">
                 <h1><b>LANDING PAGE</b></h1>
-                <p>Apenas um simples bot para o Discord</p>
+                <p class="desc">Apenas um simples bot para o Discord</p>
                 <button><a class="adicionar"
                         href="https://discord.com/oauth2/authorize?client_id=1074049474386731068&scope=bot&permissions=8">Me
                         adicione</a></button> <button><b>Saiba mais</b></button>
@@ -188,3 +241,6 @@
         </div>
     </section>
 </body>
+
+
+
